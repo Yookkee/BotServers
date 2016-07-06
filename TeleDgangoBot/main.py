@@ -4,6 +4,12 @@ import ab
 import requests
 
 
+def CheckResponse(json):
+    if json.status_code == 404:
+        return False
+    else:
+        return True
+
 bot = telebot.TeleBot(const.token)
 
 @bot.message_handler(commands=['auth'])
@@ -57,6 +63,13 @@ def handle_command(message):
 
         url = const.django_server + "api/{}/list".format(ab.users[mcid])
         json = requests.get(url)
+
+        if not CheckResponse(json):
+            bot.send_message(message.chat.id, "Server doesn't response!")
+            if mcid in ab.state:
+                del ab.state[mcid]
+            return
+
         msg = json.json()  # decode
         if msg['result'] != "ok":
             bot.send_message(message.chat.id, msg['result'])
@@ -79,6 +92,13 @@ def handle_command(message):
         url = const.django_server + "api/auth/{}".format(message.text)
         print(url)
         json = requests.get(url)  # get json answer
+
+        if not CheckResponse(json):
+            bot.send_message(message.chat.id, "Server doesn't response!")
+            if mcid in ab.state:
+                del ab.state[mcid]
+            return
+
         msg = json.json()  # decode
         del ab.state[mcid]  # delete chat status
 
@@ -93,6 +113,13 @@ def handle_command(message):
             url = const.django_server + "api/{}/delete/{}".format(ab.users[mcid], message.text)
             print(url)
             json = requests.get(url)  # get json answer
+
+            if not CheckResponse(json):
+                bot.send_message(message.chat.id, "Server doesn't response!")
+                if mcid in ab.state:
+                    del ab.state[mcid]
+                return
+
             msg = json.json()  # decode
             del ab.state[mcid]  # delete chat status
             bot.send_message(message.chat.id, msg['result'])
@@ -106,6 +133,13 @@ def handle_command(message):
     elif ab.state[mcid].startswith('title:') is True:
         url = const.django_server + "api/{}/add/{}/{}".format(ab.users[mcid], ab.state[mcid][7:], message.text)
         json = requests.get(url)
+
+        if not CheckResponse(json):
+            bot.send_message(message.chat.id, "Server doesn't response!")
+            if mcid in ab.state:
+                del ab.state[mcid]
+            return
+
         msg = json.json()  # decode
         del ab.state[mcid]
         bot.send_message(message.chat.id, msg['result'])
