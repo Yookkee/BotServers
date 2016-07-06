@@ -50,3 +50,4 @@ TeleDgangoBot/.idea/workspace.xml
 *.xml
 TeleDgangoBot/.idea/TeleDjangoBot.iml
 TeleDgangoBot/const.py
+*.iml
