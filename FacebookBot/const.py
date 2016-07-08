@@ -1,0 +1,1 @@
+dj_server = 'http://bd8f77ad.ngrok.io/'
