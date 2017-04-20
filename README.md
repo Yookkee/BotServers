@@ -12,12 +12,13 @@ Install with PATH and name limit deactivation
 Можно это сделать из любой папки, но лучше в папке django рядом с папкой tobacco
 * [cmd > pip install virtualenv]
 * [cmd > virtualenv env]
+
 Это создаст папку env в текущей директории
 
 Для активации 	
-	env\Script\activate.bat
+* [env\Script\activate.bat]
 Для деактивации 
-	env\Script\deactivate.bat
+* [env\Script\deactivate.bat]
 
 ### Далее все действия внутри окружения:
 
