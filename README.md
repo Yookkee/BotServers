@@ -25,12 +25,12 @@ Install with PATH and name limit deactivation
 
 Все зависимости лежат в файле requirements.txt
 
-Чтобы сделать такой файлик, допустим при скачивании новых модулей через pip, нужно исполнить следующую команду:
-* [pip freeze > requirements.txt]
-
 Для скачивания необходимых зависимостей:
 * [pip install -r requirements.txt]
 	
+Чтобы сделать такой файлик, допустим, при скачивании новых модулей через pip, нужно исполнить следующую команду:
+* [pip freeze > requirements.txt]
+
 Если возникнут какие-то ошибки можно попробовать:
 * [pip install Django]
 * [pip install Pillow]
