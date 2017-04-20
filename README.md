@@ -74,4 +74,5 @@ Install with PATH and name limit deactivation
 ### Использование в шаблонах
 * {% load static %}
 * <img src="{% static "main_page/hookah.jpg" %}" alt="My Hookah"/>
+
 **Больше примеров на сайте Джанго**
