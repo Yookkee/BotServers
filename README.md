@@ -61,13 +61,13 @@ Install with PATH and name limit deactivation
 
 ## Работа со статикой
 * Внутри каждого приложения нужно созавать папку со статикой
-main_page
-|___ migrations/
-|___ templates/
-|___ static/
-|
-|___ admin.py
-|___ ...
+*main_page
+*|___ migrations/
+*|___ templates/
+*|___ static/
+*|
+*|___ admin.py
+*|___ ...
 
 * В settings.py в STATICFILES_DIRS нужно указывать каждое приложение со статикой
 * Пример для приложения main_page : **os.path.join(BASE_DIR, "main_page/static")**
