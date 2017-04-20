@@ -17,6 +17,7 @@ Install with PATH and name limit deactivation
 
 Для активации 	
 * [env\Script\activate.bat]
+
 Для деактивации 
 * [env\Script\deactivate.bat]
 
@@ -33,4 +34,5 @@ Install with PATH and name limit deactivation
 Если возникнут какие-то ошибки можно попробовать:
 * [pip install Django]
 * [pip install Pillow]
+
 В будующем этого может стать недостаточно, т.е могут появить еще модули!!!
