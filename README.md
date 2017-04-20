@@ -16,23 +16,23 @@ Install with PATH and name limit deactivation
 Это создаст папку env в текущей директории
 
 Для активации 	
-* [env\Script\activate.bat]
+* [>env\Script\activate.bat]
 
 Для деактивации 
-* [env\Script\deactivate.bat]
+* [>env\Script\deactivate.bat]
 
 ### Далее все действия внутри окружения:
 
 Все зависимости лежат в файле requirements.txt
 
 Для скачивания необходимых зависимостей:
-* [pip install -r requirements.txt]
+* [>pip install -r requirements.txt]
 	
 Чтобы сделать такой файлик, допустим, при скачивании новых модулей через pip, нужно исполнить следующую команду:
-* [pip freeze > requirements.txt]
+* [>pip freeze > requirements.txt]
 
 Если возникнут какие-то ошибки можно попробовать:
-* [pip install Django]
-* [pip install Pillow]
+* [>pip install Django]
+* [>pip install Pillow]
 
 В будующем этого может стать недостаточно, т.е могут появить еще модули!!!
