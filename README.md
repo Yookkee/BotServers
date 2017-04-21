@@ -64,7 +64,7 @@ Install with PATH and name limit deactivation
 
 Т.е это будет выглядеть: **tobaccopoisk/main_page/static/main_page/**
 
-Путь к файлам будет иметь вид: **tobaccopoisk/main_page/static/main_page/image.jpg**
+Путь к файлам будет иметь вид: **tobaccopoisk/main_page/static/main_page/image.jpg** (<project_name>/<app_name>/static/<app_name>/file)
 
 ### Настройка статики
 
