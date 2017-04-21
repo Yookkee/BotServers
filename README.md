@@ -21,50 +21,51 @@ Install with PATH and name limit deactivation
 Это создаст папку env в текущей директории
 
 Для активации 	
-`env\Scripts\activate.bat`
+* `env\Scripts\activate.bat`
 
 Для деактивации 
-`env\Scripts\deactivate.bat`
+* `env\Scripts\deactivate.bat`
 
 ### Далее все действия внутри окружения:
 
 Все зависимости лежат в файле requirements.txt
 
 Для скачивания необходимых зависимостей:
-* [pip install -r requirements.txt]
+* `pip install -r requirements.txt`
 	
 Чтобы сделать такой файлик, допустим, при скачивании новых модулей через pip, нужно исполнить следующую команду:
-* [pip freeze > requirements.txt]
+* `pip freeze > requirements.txt`
 
 Если возникнут какие-то ошибки можно попробовать:
-* [pip install Django]
-* [pip install Pillow]
+* `pip install Django`
+* `pip install Pillow`
 
 В будующем этого может стать недостаточно, т.е могут появить еще модули!!!
 
 ## Запуск сервера
 
 * Перейти в папку проекта tobacco_project/django/tobaccopoisk
-* Выполнить: [managy.py runserver]
+* Выполнить: `managy.py runserver`
 * Опционально: после вызова можно указать ip:port
 * По дефолту: 127.0.0.1:8000
 
 ## Создание юзера в админке
 
-* manage.py createsuperuser
+* `manage.py createsuperuser`
 * Чтобы войти, к адресу сайта приписываем /admin
 
 ## Связь html и питона (шаблоны)
 
 * Соответсвующие html коды помещены в папку
-'appname'/template/'appname' для каждого приложения (tobacco, main и т.д.)
+<app_name>/templates/<app_name> для каждого приложения (tobacco, main и т.д.)
 
 ## Работа со статикой
 Внутри каждого приложения нужно созавать папку со статикой. Внутри нее файл с именем совпадающим с названием приложения.
 
-Т.е это будет выглядеть: **/tobaccopoisk/main_page/static/main_page/** `/<project_name>/<app_name>/static/<app_name>/`
+Т.е это будет выглядеть: **/tobaccopoisk/main_page/static/main_page/** [/<project_name>/<app_name>/static/<app_name>/]
 
-Путь к файлам будет иметь вид: **/tobaccopoisk/main_page/static/main_page/image.jpg** `/<project_name>/<app_name>/static/<app_name>/file`
+Путь к файлам будет иметь вид: **/tobaccopoisk/main_page/static/main_page/image.jpg** 
+[/<project_name>/<app_name>/static/<app_name>/file]
 
 ### Настройка статики
 
