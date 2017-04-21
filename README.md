@@ -62,15 +62,15 @@ Install with PATH and name limit deactivation
 ## Работа со статикой
 Внутри каждого приложения нужно созавать папку со статикой. Внутри нее файл с именем совпадающим с названием приложения.
 
-Т.е это будет выглядеть: **tobaccopoisk/main_page/static/main_page/** *same paragraph*
+Т.е это будет выглядеть: **tobaccopoisk/main_page/static/main_page/**
 
-Путь к файлам будет иметь вид: **tobaccopoisk/main_page/static/main_page/image.jpg** '<project_name>/<app_name>/static/<app_name>/file' *same paragraph*
+Путь к файлам будет иметь вид: **tobaccopoisk/main_page/static/main_page/image.jpg** '<project_name>/<app_name>/static/<app_name>/file'
 
 ### Настройка статики
 
 В settings.py в STATICFILES_DIRS нужно указывать каждое приложение со статикой
 
-Пример для приложения main_page : **os.path.join(BASE_DIR, "main_page/static")** *same paragraph*
+Пример для приложения main_page : **os.path.join(BASE_DIR, "main_page/static")**
 ### Использование в шаблонах
 * {% load static %}
 * <img src="{% static "main_page/hookah.jpg" %}" alt="My Hookah"/>
