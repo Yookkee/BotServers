@@ -1,5 +1,5 @@
 ## tobacco_project
-
+![alt text](https://github.com/denis-koptev/tobacco_project/blob/master/design/resources/flame_logo.png?raw=true)
 From potential creators of porn-social network
 
 
@@ -60,7 +60,7 @@ Install with PATH and name limit deactivation
 (*<app_name>/templates/<app_name>*) для каждого приложения (tobacco, main и т.д.)
 
 ## Работа со статикой
-Внутри каждого приложения нужно созавать папку со статикой. Внутри нее файл с именем совпадающим с названием приложения.
+Внутри каждого приложения нужно созавать папку со статикой. Внутри нее файл с именем, совпадающим с названием приложения.
 
 Т.е это будет выглядеть: **/tobaccopoisk/main_page/static/main_page/** 
 (*/<project_name>/<app_name>/static/<app_name>/*)
