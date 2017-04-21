@@ -10,7 +10,7 @@ Download python3 https://www.python.org/ftp/python/3.6.1/python-3.6.1.exe
 Install with PATH and name limit deactivation
 
 Клоним проект
-`git clone https://github.com/denis-koptev/tobacco_project]`
+`git clone https://github.com/denis-koptev/tobacco_project`
 
 После установки питона нужно поставить виртуальное окружение
 
@@ -57,16 +57,16 @@ Install with PATH and name limit deactivation
 ## Связь html и питона (шаблоны)
 
 * Соответсвующие html коды помещены в папку
-*<app_name>/templates/<app_name>* для каждого приложения (tobacco, main и т.д.)
+(*<app_name>/templates/<app_name>*) для каждого приложения (tobacco, main и т.д.)
 
 ## Работа со статикой
 Внутри каждого приложения нужно созавать папку со статикой. Внутри нее файл с именем совпадающим с названием приложения.
 
 Т.е это будет выглядеть: **/tobaccopoisk/main_page/static/main_page/** 
-*/<project_name>/<app_name>/static/<app_name>/*
+(*/<project_name>/<app_name>/static/<app_name>/*0
 
 Путь к файлам будет иметь вид: **/tobaccopoisk/main_page/static/main_page/image.jpg** 
-*/<project_name>/<app_name>/static/<app_name>/file*
+(*/<project_name>/<app_name>/static/<app_name>/file*)
 
 ### Настройка статики
 
