@@ -15,10 +15,8 @@ Install with PATH and name limit deactivation
 После установки питона нужно поставить виртуальное окружение
 
 Можно это сделать из любой папки, но лучше в папке django рядом с папкой tobacco
-
-`cmd > pip install virtualenv`
-
-`cmd > virtualenv env`
+* `cmd > pip install virtualenv`
+* `cmd > virtualenv env`
 
 Это создаст папку env в текущей директории
 
