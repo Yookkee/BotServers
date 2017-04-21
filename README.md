@@ -45,7 +45,7 @@ Install with PATH and name limit deactivation
 ## Запуск сервера
 
 * Перейти в папку проекта tobacco_project/django/tobaccopoisk
-* Выполнить: `managy.py runserver`
+* Выполнить: `manage.py runserver`
 * Опционально: после вызова можно указать ip:port
 * По дефолту: 127.0.0.1:8000
 
@@ -57,21 +57,22 @@ Install with PATH and name limit deactivation
 ## Связь html и питона (шаблоны)
 
 * Соответсвующие html коды помещены в папку
-<app_name>/templates/<app_name> для каждого приложения (tobacco, main и т.д.)
+*<app_name>/templates/<app_name>* для каждого приложения (tobacco, main и т.д.)
 
 ## Работа со статикой
 Внутри каждого приложения нужно созавать папку со статикой. Внутри нее файл с именем совпадающим с названием приложения.
 
-Т.е это будет выглядеть: **/tobaccopoisk/main_page/static/main_page/** [/<project_name>/<app_name>/static/<app_name>/]
+Т.е это будет выглядеть: **/tobaccopoisk/main_page/static/main_page/** 
+*/<project_name>/<app_name>/static/<app_name>/*
 
 Путь к файлам будет иметь вид: **/tobaccopoisk/main_page/static/main_page/image.jpg** 
-[/<project_name>/<app_name>/static/<app_name>/file]
+*/<project_name>/<app_name>/static/<app_name>/file*
 
 ### Настройка статики
 
 В settings.py в STATICFILES_DIRS нужно указывать каждое приложение со статикой
 
-Пример для приложения main_page : **os.path.join(BASE_DIR, "main_page/static")**
+Пример для приложения main_page : `os.path.join(BASE_DIR, "main_page/static")`
 ### Использование в шаблонах
 `{% load static %}`
 
