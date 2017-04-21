@@ -73,6 +73,7 @@ Install with PATH and name limit deactivation
 Пример для приложения main_page : **os.path.join(BASE_DIR, "main_page/static")**
 ### Использование в шаблонах
 `{% load static %}`
+
 `<img src="{% static "main_page/hookah.jpg" %}" alt="My Hookah"/>`
 
 *Больше примеров на сайте Джанго*
