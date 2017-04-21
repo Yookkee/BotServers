@@ -1,6 +1,7 @@
 ## tobacco_project
 ![alt text](https://github.com/denis-koptev/tobacco_project/blob/master/design/resources/flame_logo.png?raw=true)
-From potential creators of porn-social network
+
+*From potential creators of porn-social network*
 
 
 ## How to start
